@@ -1,0 +1,46 @@
+{% extends "managementNavbar.html" %}
+{% block title %}
+Profile
+{% endblock %}
+{% block content %}
+<div class="card m-auto mt-5 p-2 mb-5" style="width:70%;   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+
+<div class="bd-cheatsheet container-fluid bg-body">
+{% for i in x %}
+<h2 style="color:#00b1ff"><img src="https://picsum.photos/60" style="border-radius: 30px;" class="me-3"><span>{{i[1]}} {{i[2]}}</span></h2>
+<p style="text-transform: uppercase; font-weight: 500;font-size: 115%; color:#91612F;">{{i[11]}}</p>
+
+<hr>
+
+<h3 style="text-decoration: underline;">Details</h3>
+<p class="m-0"><span style="text-decoration: underline;">ID:</span> {{i[0]}} </p>
+<p class="m-0"><span style="text-decoration: underline;">Phone:</span> {{i[3]}}</p>
+<p class="m-0"><span style="text-decoration: underline;">Salary:</span> ₹{{i[4]}}</p>
+<p class="m-0"><span style="text-decoration: underline;">Date of Birth:</span> {{i[12]}}</p>
+<hr>
+<h3 style="text-decoration: underline;">Address:</h3>
+<p class="m-0"> {{i[5]}}, {{i[6]}}, {{i[7]}}</p>
+<p class="m-0"> {{i[8]}}, {{i[9]}}</p>
+<p class="m-0"> {{i[10]}}</p>
+
+{% endfor %}
+</div>
+</div>
+{% endblock %}
+
+Field       | Type        | Null | Key | Default | Extra |
++-------------+-------------+------+-----+---------+-------+
+| employeeID  | varchar(8)  | NO   | PRI | NULL    |       |
+| fName       | varchar(20) | NO   |     | NULL    |       |
+| lName       | varchar(20) | NO   |     | NULL    |       |
+| phone       | char(10)    | NO   | UNI | NULL    |       |
+| salary      | int         | NO   |     | NULL    |       |
+| hNo         | varchar(6)  | NO   |     | NULL    |       |
+| street      | varchar(20) | YES  |     | NULL    |       |
+| area        | varchar(20) | NO   |     | NULL    |       |
+| city        | varchar(20) | NO   |     | NULL    |       |
+| state       | varchar(20) | NO   |     | NULL    |       |
+| pin         | char(6)     | NO   |     | NULL    |       |
+| designation | varchar(50) | NO   |     | NULL    |       |
+| dob         | date        | NO   |     | NULL    |       |
++-------------+-------------+------+-----+---------+--

@@ -1,0 +1,100 @@
+{% extends "customerNavbar.html" %}
+{% block title %}
+FAPP
+{% endblock %}
+{% block content %}
+<div class="jumbotron jumbotron-fluid" style="background-color:#eeeeee">
+	<div class="container" >
+		<div class="row m-0 p-2 pt-3">
+			<div class="col-md-6 col-12 m-auto">
+				<h1 style="color:#00b1ff">Place Order!!</h1>
+				<p style="font-size: 19px;">
+					Good food is always cooking :) <br>
+					Order now to avail exclusive discounts on your favourite foods.
+				</p>
+			</div>
+			<div class="col-md-6 col-12 m-auto ">
+				<img src="{{url_for('static', filename='placeOrder.png')}}" width="60%" class="ms-5">
+			</div>
+		</div>
+	</div>
+  </div>
+  <div class="container p-5">
+	<h2 style="text-align: center;color:#91612F; text-decoration: underline;" class="mt-3 mb-5">Select your favourite food</h2>
+
+	<form action='#' method="post" class="container pl-5 pr-5 m-auto">
+		<p>
+			<p class="m-0" style="color:red; font-size:80%">
+				FoodID*
+			</p>
+			<input type="text" name="food1" class="mb-2 " required/>
+			<br>
+			<label style="color:red; font-size:80%">Select quantity*</label>
+			<select class="form-select " name="quantity1" required>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            </select>
+		</p>
+		<hr>
+		<p>
+			<p class="m-0" style="color:red; font-size:80%">
+				FoodID
+			</p>
+			<input type="text" name="food2" class="mb-2"/>
+			<br>
+			<label style="color:red; font-size:80%">Select quantity</label>
+			<select class="form-select" name="quantity2">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            </select>
+		</p>
+		<hr>
+		<p>
+			<p class="m-0" style="color:red; font-size:80%">
+				FoodID
+			</p>
+			<input type="text" name="food3"  class="mb-2"/>
+			<br>
+			<label style="color:red; font-size:80%">Select quantity</label>
+			<select class="form-select" name="quantity3">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            </select>
+		</p>
+		<hr>
+		<p>
+			<p class="m-0" style="color:red; font-size:80%">Mode of Payment*</p>
+			<select class="form-select" name="payment_mode">
+            <option value="COD">COD</option>
+            <option value="Paytm">Paytm</option>
+            <option value="VISA">VISA</option>
+            <option value="UPI">UPI</option>
+            <option value="Phone Pe">Phone Pe</option>
+            <option value="Google Pay">Google Pay</option>
+            </select>
+        </p>
+        <p class="m-0" style="color:red; font-size:80%">Rating</p>
+            <select class="form-select" name="rating">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            </select>
+            <br>
+	<p><input type="submit" value="Place Order" class="btn btn-success btn-lg" style="border-radius: 30px;"/></p>
+
+	</form>
+
+  </div>
+	
+{% endblock %}
