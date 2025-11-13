@@ -2,7 +2,7 @@
 <p align = "center">
 <h1> 
   FAPP Database
-  <img src = "static/favicon.png" width = "8%" align = "left"> 
+
 </h1>
 </p>
 
