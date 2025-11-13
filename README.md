@@ -9,7 +9,7 @@
 
 
 <p align ="center">
-    <img src="static/loginScreen.png" width="95%">
+    
 </p>
 
 ## About the Project 🚀
