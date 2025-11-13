@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <p align = "center">
 <h1> 
   FAPP Database
@@ -18,3 +19,6 @@ Through this project, we aim to reduce food wastage and help the organizations w
 
 
 
+=======
+# food-and-waste-managment-system
+>>>>>>> d3d9ed0ae7a402f6f17a416f071d557a61999e3a
